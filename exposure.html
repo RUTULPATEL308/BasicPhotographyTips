@@ -5,7 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Master camera exposure settings. Learn about aperture, shutter speed, ISO, and the exposure triangle for perfect photos." />
-    <link rel="stylesheet" href="./assets/Css/styles.css" />
+    <link rel="stylesheet" href="assets/Css/styles.css" />
+    <style>
+      /* Page-specific fix: prevent triangle cards from overlapping on wide screens */
+      .exposure-triangle { width: 520px; height: 320px; }
+      @media (max-width: 768px) { .exposure-triangle { width: 320px; height: 260px; } }
+      @media (max-width: 480px) { .exposure-triangle { width: 260px; height: 220px; } }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -17,12 +23,9 @@
         </div>
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link ">Home</a></li>
-          <li><a href="#" class="nav-link dropdown">Camera Basics</a></li>
           <li><a href="exposure.html" class="nav-link dropdown active">Exposure</a></li>
           <li><a href="lighting.html" class="nav-link">Lighting</a></li>
           <li><a href="composition.html" class="nav-link">Composition</a></li>
-          <li><a href="#" class="nav-link">Avoid Mistakes</a></li>
-          <li><a href="#" class="nav-link dropdown">Styles</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
@@ -477,15 +480,7 @@
             </ul>
           </div>
           
-          <div class="footer-section">
-            <h4>Photography Styles</h4>
-            <ul class="footer-links">
-              <li><a href="#">Portrait</a></li>
-              <li><a href="#">Landscape</a></li>
-              <li><a href="#">Street</a></li>
-              <li><a href="#">Others</a></li>
-            </ul>
-          </div>
+          
           
           <div class="footer-section">
             <h4>Contact Info</h4>
